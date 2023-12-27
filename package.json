@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "jquery": "^3.7.1",
     "typeahead.js": "^0.11.1"
