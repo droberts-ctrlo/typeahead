@@ -3,8 +3,7 @@
  * @param name - name of the suggestion
  * @param id - id of the suggestion
  */
-export interface MappedResponse
-{
+export interface MappedResponse {
     name: string,
     id: number
 };
@@ -36,11 +35,22 @@ interface Record {
  * @param r The response from the script
  * @returns The mapped response
  */
-export const map: MapperFunction = (r:ScriptResponse) => {
-    return r.records.map((record) => {
-        return {
-            name: record.label,
-            id: record.id
-        }
-    });
+export const map: MapperFunction = (r: ScriptResponse | string[]) => {
+    if (r instanceof Object) {
+        const rs = r as ScriptResponse;
+        return rs.records.map((record) => {
+            return {
+                name: record.label,
+                id: record.id
+            }
+        });
+    } else {
+        const rs = r as string[];
+        return rs.map((record) => {
+            return {
+                name: record,
+                id: 0
+            }
+        });
+    }
 }

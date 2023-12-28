@@ -1321,7 +1321,7 @@
     expect "^29.0.0"
     pretty-format "^29.0.0"
 
-"@types/jquery@^3.5.29":
+"@types/jquery@*", "@types/jquery@^3.5.29":
   version "3.5.29"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.29.tgz#3c06a1f519cd5fc3a7a108971436c00685b5dcea"
   integrity sha512-oXQQC9X9MOPRrMhPHHOsXqeQDnWeCDT3PelUIg/Oy8FAbzSZtFHRjc7IpbfFVmpLtJ+UOoywpRsuO5Jxjybyeg==
@@ -1358,6 +1358,13 @@
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.5.tgz#cb6e2a691b70cb177c6e3ae9c1d2e8b2ea8cd304"
   integrity sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==
+
+"@types/typeahead.js@^0.11.6":
+  version "0.11.6"
+  resolved "https://registry.yarnpkg.com/@types/typeahead.js/-/typeahead.js-0.11.6.tgz#1932c99ea32f7eaac75cd0f508f5b2fc9a0a02b9"
+  integrity sha512-/iFesuUPWCnNtbOvh3yuytCciRagAuiogguPp13zP08BRFSWznvzsF8RSY8yRYh/3z14YavMTjRrVFZjpGFt2A==
+  dependencies:
+    "@types/jquery" "*"
 
 "@types/yargs-parser@*":
   version "21.0.3"
