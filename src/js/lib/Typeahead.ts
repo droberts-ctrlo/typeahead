@@ -16,7 +16,7 @@ class Typeahead {
         }, {
             name: name,
             source: (query, syncResults, asyncResults) => {
-                const request: JQuery.AjaxSettings<any> = {
+                const request: JQuery.AjaxSettings<unknown> = {
                     url: ajaxSource + (appendQuery ? query : ""),
                     dataType: "json",
                     success: (data) => {
@@ -30,7 +30,7 @@ class Typeahead {
             display: 'name',
             limit: 10,
             templates: {
-                suggestion: (item: {name:String, id:number}) => {
+                suggestion: (item: {name:string, id:number}) => {
                     return `<div>${item.name}</div>`;
                 },
                 pending: () => {
@@ -42,7 +42,7 @@ class Typeahead {
             },
         });
 
-        this.$input.on('typeahead:select', (ev: any, suggestion: MappedResponse) => {
+        this.$input.on('typeahead:select', (ev: unknown, suggestion: MappedResponse) => {
             this.callback(suggestion);
         });
     }

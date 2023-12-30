@@ -6,9 +6,9 @@
 export interface MappedResponse {
     name: string,
     id: number
-};
+}
 
-export type MapperFunction = (any) => MappedResponse[];
+export type MapperFunction = (arg0: ScriptResponse | string[] | unknown[]) => MappedResponse[];
 
 /**
  * ScriptResponse interface for Typeahead class script responses

@@ -6,7 +6,8 @@ class TypeaheadSourceOptions {
         public ajaxSource: string,
         public mapper: MapperFunction,
         public appendQuery: boolean,
-        public data: any,
+        public data: unknown,
+        // eslint-disable-next-line @typescript-eslint/ban-types
         public dataBuilder?: Function
     ) {}
 }

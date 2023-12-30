@@ -1,16 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import TypeaheadBuilder from './TypeaheadBuilder';
-
-declare global {
-    interface Window {
-        $: any;
-    }
-}
-
-window.$ = require('jquery');
+import $ from 'jquery';
 
 describe('builder', () => {
     it('should error on the typeahead input not being set', () => {
-        var builder = new TypeaheadBuilder();
+        const builder = new TypeaheadBuilder();
         builder.withCallback((suggestion) => { return; });
         builder.withName('test');
         builder.withAjaxSource('test');
@@ -18,7 +12,7 @@ describe('builder', () => {
     });
 
     it('should error on the typeahead callback not being set', () => {
-        var builder = new TypeaheadBuilder();
+        const builder = new TypeaheadBuilder();
         builder.withInput($(document.createElement('input')));
         builder.withName('test');
         builder.withAjaxSource('test');
@@ -26,7 +20,7 @@ describe('builder', () => {
     });
 
     it('should error on the typeahead name not being set', () => {
-        var builder = new TypeaheadBuilder();
+        const builder = new TypeaheadBuilder();
         builder.withInput($(document.createElement('input')));
         builder.withCallback((suggestion) => { return; });
         builder.withAjaxSource('test');
@@ -34,7 +28,7 @@ describe('builder', () => {
     });
 
     it('should error on the typeahead ajax source not being set', () => {
-        var builder = new TypeaheadBuilder();
+        const builder = new TypeaheadBuilder();
         builder.withInput($(document.createElement('input')));
         builder.withCallback((suggestion) => { return; });
         builder.withName('test');
@@ -42,7 +36,7 @@ describe('builder', () => {
     });
 
     it('should build the typeahead', () => {
-        var builder = new TypeaheadBuilder();
+        const builder = new TypeaheadBuilder();
         builder.withInput($(document.createElement('input')));
         builder.withCallback((suggestion) => { return; });
         builder.withName('test');

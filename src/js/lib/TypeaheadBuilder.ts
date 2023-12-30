@@ -22,8 +22,9 @@ class TypeaheadBuilder {
     private name: string;
     private ajaxSource: string;
     private appendQuery: boolean;
-    private data: any;
-    private mapper: MapperFunction = (data: any) => {return data.map(d=> {return {name: d.name, id: d.id}})};
+    private data: unknown;
+    private mapper: MapperFunction = (data: {name:string, id:number}[]) => {return data.map(d=> {return {name: d.name, id: d.id}})};
+    // eslint-disable-next-line @typescript-eslint/ban-types
     private dataBuilder?: Function;
 
     /**
@@ -88,7 +89,7 @@ class TypeaheadBuilder {
      * @param data The data to be sent with the ajax request
      * @returns The builder being used
      */
-    withData(data: any) {
+    withData(data: unknown) {
         this.dataBuilder = undefined;
         this.data = data;
         return this;
@@ -109,6 +110,7 @@ class TypeaheadBuilder {
      * @param dataBuilderFunction The function to be used to build the data to be sent with the ajax request
      * @returns The builder being used
      */
+    // eslint-disable-next-line @typescript-eslint/ban-types
     withDataBuilder(dataBuilderFunction:Function) {
         this.data = undefined;
         this.dataBuilder = dataBuilderFunction;
