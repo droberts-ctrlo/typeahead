@@ -1005,36 +1005,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@davetheitguy/common@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@davetheitguy/common/-/common-1.0.4.tgz#62a55352e885c4b864367cd0e6c02555f9e3672c"
-  integrity sha512-STE6inxvIfgXeVPndOmA2IgArDkhEjHd5+AM7rPim+SMmoZCx54KTy6oXpFEDqbfl2r2Taf+3wm4Q5cbA0FAWA==
-  dependencies:
-    jquery "^3.7.1"
-
-"@davetheitguy/filedrag@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@davetheitguy/filedrag/-/filedrag-1.0.1.tgz#550ecb44851909faa760fe3a4cb33cc64ad1a8cf"
-  integrity sha512-/iIDqk0m6f3XHgrRP2ind72fPHC4ymjJTXMauxhBHYhxagGPHNNxvkbxl2G1zfD8/l3QL1VMBct+WPUFmrDPqQ==
-  dependencies:
-    "@davetheitguy/common" "^1.0.4"
-    jquery "^3.7.1"
-
-"@davetheitguy/markdown-formatter@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@davetheitguy/markdown-formatter/-/markdown-formatter-1.0.3.tgz#99c48ae7ea48a56aa65318d0718f228b5c83b7d5"
-  integrity sha512-IcNuwh9vplFBaQ5ekddiix8egurtTvONO9bQvKfbwNWVPeuyh6tUXsdUzI2MyKTunFZL3i7H1gCh+jueZqQP2Q==
-  dependencies:
-    marked "^12.0.2"
-
-"@davetheitguy/typeahead@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@davetheitguy/typeahead/-/typeahead-1.0.1.tgz#2cfac0516f1ae716049228787f8831cba3eae239"
-  integrity sha512-mKzTppJUIiWGVQQmgxiESEvGbIBEtayGuYHNjHsuYmvPhzEC6CWaFJgDiT/0w3KTdYIVjk+PZepc40d9B5bteQ==
-  dependencies:
-    jquery "^3.7.1"
-    typeahead.js "^0.11.1"
-
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz#a23514e8fb9af1269d5f7788aa556798d61c6b59"
@@ -3174,11 +3144,6 @@ makeerror@1.0.12:
   integrity sha512-JmqCvUhmt43madlpFzG4BQzG2Z3m6tvQDNKdClZnO3VbIudJYmxsT0FNJMeiB2+JTSlTQTSbU8QdesVmwJcmLg==
   dependencies:
     tmpl "1.0.5"
-
-marked@^12.0.2:
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-12.0.2.tgz#b31578fe608b599944c69807b00f18edab84647e"
-  integrity sha512-qXUm7e/YKFoqFPYPa3Ukg9xlI5cyAtGmyEIzMfW//m6kXwCy2Ps9DYf5ioijFKQ8qyuscrHoY04iJGctu2Kg0Q==
 
 merge-stream@^2.0.0:
   version "2.0.0"
