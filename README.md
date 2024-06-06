@@ -1,4 +1,4 @@
-# Typeahead
+# Typeahead [![JS Tests](https://github.com/droberts-ctrlo/typeahead/actions/workflows/tests.yml/badge.svg)](https://github.com/droberts-ctrlo/typeahead/actions/workflows/tests.yml)
 
 This is a typeahead module built to simplify usage of twitter's typeahead.js library. It is designed to be as simple as possible to use.
 
