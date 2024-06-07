@@ -32,3 +32,7 @@ new TypeaheadBuilder()
   .withAjaxSource('/api/data')
   .build();
 ```
+
+## Testing
+
+Jest testing has been removed due to an issue with JEST and ESM, although unit tests do exist
