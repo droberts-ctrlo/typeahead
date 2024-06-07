@@ -1,4 +1,5 @@
 {
+  "main": "dist/index.js",
   "name": "@davetheitguy/typeahead",
   "version": "1.0.3",
   "license": "MIT",
@@ -14,17 +15,19 @@
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@eslint/js": "^9.4.0",
-    "@jest/globals": "^29.7.0",
     "@types/jquery": "^3.5.30",
     "@types/typeahead.js": "^0.11.6",
     "eslint": "9.x",
     "globals": "^15.3.0",
     "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^24.1.0",
     "ts-jest": "^29.1.4",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.12.0"
+    "typescript-eslint": "^7.12.0",
+    "vitest": "^1.6.0"
   },
   "scripts": {
+    "test": "vitest",
     "lint": "eslint src",
     "prepublish": "tsc"
   }

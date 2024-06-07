@@ -1,5 +1,5 @@
 import { TypeaheadBuilder } from './TypeaheadBuilder';
-import { describe, it, expect } from "@jest/globals";
+import { describe, expect, it } from "vitest";
 
 declare global {
     interface Window {

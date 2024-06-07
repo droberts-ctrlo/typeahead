@@ -1,5 +1,5 @@
 import { map } from "./mapper";
-import { describe, expect, it } from "@jest/globals";
+import { describe, expect, it } from "vitest";
 
 describe('mapper', () => {
     it('should map from ScriptResponse to name/id pair', () => {
